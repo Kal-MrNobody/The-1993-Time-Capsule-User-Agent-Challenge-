@@ -31,19 +31,20 @@ def challenge():
         msg = "ERROR: Protocol Mismatch." 
 ```
 
-🔓 Solution
+##🔓 Solution
 To solve this, we must spoof our User-Agent string to match the requirement found in the hints.
 
-Method 1: Using Curl
+**Method 1**: Using Curl
+
 ```curl -A "NCSA_Mosaic/2.0 (Windows 3.1)" -X POST http://localhost:5080```
 
-Method 2: Using Burp Suite
+**Method 2**: Using Burp Suite
 
-Intercept the request to http://localhost:5080.
+Intercept the request to ```http://localhost:5080.```
 
 Send it to Repeater.
 
-Change User-Agent: Mozilla/5.0... to User-Agent: NCSA_Mosaic/2.0 (Windows 3.1).
+Change User-Agent: ```Mozilla/5.0...``` to ```User-Agent: NCSA_Mosaic/2.0 (Windows 3.1)```.
 
 Send the request.
 
