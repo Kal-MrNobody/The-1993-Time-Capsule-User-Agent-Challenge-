@@ -31,7 +31,7 @@ def challenge():
         msg = "ERROR: Protocol Mismatch." 
 ```
 
-##🔓 Solution
+## 🔓 Solution
 To solve this, we must spoof our User-Agent string to match the requirement found in the hints.
 
 **Method 1**: Using Curl
